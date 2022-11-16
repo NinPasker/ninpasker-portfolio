@@ -251,6 +251,22 @@ html {
   text-align: center;
 }
 
+@font-face {
+  font-family: "Revonza";
+  src: url(../fonts/revonza-regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Adventuro";
+  src: url(../fonts/adventuro-regular.ttf);
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  font-family: "Adventuro";
+  color: #0B2B6B;
+}
+
 .name-holder {
   position: relative;
   height: 100vh;
@@ -259,6 +275,28 @@ html {
   background-size: 400% 400%;
   -webkit-animation: move 10s ease-in-out infinite 3s;
           animation: move 10s ease-in-out infinite 3s;
+}
+.name-holder svg {
+  width: 500px;
+  height: 500px;
+}
+.name-holder h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 130px;
+  letter-spacing: 0.3rem;
+  font-size: 35px;
+  font-size: 1.75rem;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #name-logo {

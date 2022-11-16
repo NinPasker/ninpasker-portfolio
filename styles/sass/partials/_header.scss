@@ -6,6 +6,22 @@
     background: linear-gradient(360deg, #d8f0fa, #f6ffc8, #1385b3);
     background-size: 400% 400%;
     animation: move 10s ease-in-out infinite 3s;
+
+    svg {
+        width: 500px;
+        height: 500px;
+    }
+
+    h2 {
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+        padding-top: 130px;
+        letter-spacing: .3rem;
+        @include fontSize(35);
+        animation-delay: 4s;
+    }
 }
 
 #name-logo {
