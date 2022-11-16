@@ -1,5 +1,15 @@
+body {
+    font-family: $bodyFont;
+    letter-spacing: .5rem;
+}
+
 h2 {
     margin: 0;
     font-family: $headingFont;
-    color: #0B2B6B;
+    color: $logoColor;
+}
+
+a {
+    text-transform: uppercase;
+    font-weight: bold;
 }
