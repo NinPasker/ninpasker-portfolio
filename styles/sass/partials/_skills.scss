@@ -1,0 +1,34 @@
+.skills {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            text-align: center;
+            width: calc(100% / 4);
+
+            &:hover {
+                i {
+                    color: rgb(58, 183, 233);
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    i {
+        @include fontSize(70);
+        line-height: 6rem;
+        transition: .5s;
+    }
+
+    p {
+        @include fontSize(30)
+    }
+
+    i,
+    p {
+        color: $logoColor;
+    }
+}

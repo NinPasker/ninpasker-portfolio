@@ -3,13 +3,42 @@ body {
     letter-spacing: .5rem;
 }
 
+main {
+    background-color: #f6ffc8;
+    border-top: 3px solid $logoColor;
+}
+
+h1,
 h2 {
     margin: 0;
     font-family: $headingFont;
     color: $logoColor;
 }
 
+h2 {
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @include fontSize(60);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+

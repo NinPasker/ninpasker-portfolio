@@ -266,15 +266,44 @@ body {
   letter-spacing: 0.5rem;
 }
 
+main {
+  background-color: #f6ffc8;
+  border-top: 3px solid #0B2B6B;
+}
+
+h1,
 h2 {
   margin: 0;
   font-family: "Adventuro";
   color: #0B2B6B;
 }
 
+h2 {
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  font-size: 3rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .menu-wrap {
@@ -365,8 +394,8 @@ a {
 .menu-wrap .toggle:checked ~ .mobile-menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 .menu-wrap .toggle:checked ~ .mobile-menu > div > div {
   opacity: 1;
@@ -457,7 +486,7 @@ a {
   width: 500px;
   height: 500px;
 }
-.name-holder h2 {
+.name-holder h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,4 +626,38 @@ a {
   100% {
     background-position: 51% 0%;
   }
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills ul li {
+  text-align: center;
+  width: 25%;
+}
+.skills ul li:hover i {
+  color: rgb(58, 183, 233);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.skills i {
+  font-size: 70px;
+  font-size: 3.5rem;
+  line-height: 6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.skills p {
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+.skills i,
+.skills p {
+  color: #0B2B6B;
 }
