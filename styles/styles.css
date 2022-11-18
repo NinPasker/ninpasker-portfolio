@@ -638,18 +638,23 @@ li {
 .skills ul li {
   text-align: center;
   width: 25%;
+  cursor: url(../assets/spaceman-cursor.png), pointer;
+}
+.skills ul li:hover i,
+.skills ul li:hover p {
+  color: #f6ffc8;
 }
 .skills ul li:hover i {
-  color: #f6ffc8;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+.skills ul li:hover p {
+  letter-spacing: 0.2rem;
 }
 .skills i {
   font-size: 70px;
   font-size: 3.5rem;
   line-height: 6rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .skills p {
   font-size: 30px;
@@ -658,6 +663,8 @@ li {
 .skills i,
 .skills p {
   color: #0B2B6B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .waveContainer {

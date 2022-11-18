@@ -8,11 +8,20 @@
         li {
             text-align: center;
             width: calc(100% / 4);
+            cursor: url(../assets/spaceman-cursor.png), pointer;
 
             &:hover {
-                i {
+                i,
+                p {
                     color: $backgroundColor;
+                }
+
+                i {
                     transform: scale(1.5);
+                }
+
+                p {
+                    letter-spacing: .2rem;
                 }
             }
         }
@@ -21,7 +30,6 @@
     i {
         @include fontSize(70);
         line-height: 6rem;
-        transition: .5s;
     }
 
     p {
@@ -31,5 +39,6 @@
     i,
     p {
         color: $logoColor;
+        transition: .5s;
     }
 }
