@@ -683,3 +683,53 @@ li {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+.carouselContainer {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 0 35px;
+}
+.carouselContainer i {
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 46px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+.carouselContainer i:first-child {
+  left: -23px;
+}
+.carouselContainer i:last-child {
+  right: -23px;
+}
+.carouselContainer .carousel {
+  white-space: nowrap;
+  font-size: 0px;
+  font-size: 0rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.carouselContainer .carousel img {
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 14px;
+  width: 33.3333333333%;
+  border-radius: 20%;
+}
+.carouselContainer .carousel img:first-child {
+  margin-left: 0px;
+}

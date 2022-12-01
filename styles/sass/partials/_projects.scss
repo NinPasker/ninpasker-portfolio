@@ -1,0 +1,46 @@
+.carouselContainer {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 35px;
+
+    i {
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 46px;
+        position: absolute;
+        border-radius: 50%;
+        cursor: pointer;
+        @include fontSize(30);
+
+        &:first-child {
+            left: -23px;
+        }
+
+        &:last-child {
+            right: -23px;
+        }
+    }
+
+    .carousel {
+        white-space: nowrap;
+        @include fontSize(0);
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            height: 340px;
+            object-fit: cover;
+            margin-left: 14px;
+            width: calc(100% / 3);
+            border-radius: 20%;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
