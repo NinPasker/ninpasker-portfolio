@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/np_favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/np_favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/np_favicon/favicon-16x16.png">
@@ -127,10 +128,10 @@
             <div class="wrapper">
                 <h2>Projects</h2>
 
-                <div class="slide-container">
+                <div class="slide-container swiper">
                     <div class="slide-content">
-                        <div class="card-wrapper">
-                            <div class="card">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
                                 <div class="img-content">
                                     <span class="overlay"></span>
 
@@ -149,26 +150,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- <div class="carouselContainer">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <div class="carousel">
-                        <img src="./assets/into-the-stars-sc.png" alt="screenshot of into-the-stars app built by nin and morgan">
-                        <img src="./assets/naruto-maple-sc.png" alt="screenshot of naruto guild website built by nin">
-                        <img src="./assets/drive-solo-sc.png" alt="screenshot of drive-solo website built by nin">
-                        <img src="./assets/bar-one-sc.png" alt="screenshot of bar-one website built by nin">
-                        <img src="./assets/fitworks-sc.png" alt="screenshot of fitworks website built by nin">
-                        <img src="" alt="">
-                    </div>
-                    <i id="right" class="fa-sharp fa-solid fa-angle-right"></i>
-                </div> -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
 
 
         </section>
     </main>
 
+    <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

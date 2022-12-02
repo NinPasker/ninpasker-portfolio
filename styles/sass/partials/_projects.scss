@@ -1,20 +1,19 @@
 .slide-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 1120px;
     width: 100%;
-    background-color: grey;
+    background-color: $backgroundColor;
+    border-radius: 25px;
     padding: 40px 0;
 
     .slide-content {
-        margin: 0 40px;
+        margin: 40px 0px 40px 60px;;
     }
 
     .card {
         width: 320px;
         border-radius: 25px;
-        background: $logoColor;
+        background: $waveColor;
+        padding-right: 10px;
     }
 
     .img-content,
@@ -34,7 +33,7 @@
             letter-spacing: .3rem;
             @include fontSize(30);
             margin-bottom: 0;
-            border-bottom: 2px solid $waveColor;
+            border-bottom: 2px solid $logoColor;
         }
 
         .tools-used {
@@ -47,7 +46,7 @@
             font-family: $bodyFont;
             letter-spacing: .3rem;
             font-weight: bold;
-            border: 2px solid $waveColor;
+            border: 2px solid $logoColor;
             border-radius: 25px;
             padding: 20px;
         }
@@ -60,7 +59,7 @@
 
             &:focus,
             &:hover {
-                color: $waveColor;
+                color: $logoColor;
             }
         }
 
