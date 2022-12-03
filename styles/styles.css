@@ -691,8 +691,19 @@ li {
   border-radius: 25px;
   padding: 40px 0;
 }
+.slide-container .swiper-navBtn {
+  color: #0B2B6B;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slide-container .swiper-navBtn:hover, .slide-container .swiper-navBtn:focus {
+  color: #429eb7;
+}
 .slide-container .slide-content {
-  margin: 40px 0px 40px 60px;
+  padding: 45px 20px;
+  margin: 40px 0;
+  border-radius: 25px;
+  width: 90%;
 }
 .slide-container .card {
   border-radius: 25px;

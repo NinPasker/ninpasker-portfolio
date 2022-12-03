@@ -1,12 +1,15 @@
 let swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    slidesPerGroup: 3,
+    slidesPerView: 1,
+    spaceBetween: 100,
+    slidesPerGroup: 1,
     loop: true,
-    loopFillGroupWithBlank: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true', 
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",

@@ -5,8 +5,22 @@
     border-radius: 25px;
     padding: 40px 0;
 
+    .swiper-navBtn {
+        color: $logoColor;
+        transition: .3s;
+
+        &:hover,
+        &:focus {
+            color: $waveColor;
+        }
+    }
+
+
     .slide-content {
-        margin: 40px 0px 40px 60px;;
+        padding: 45px 20px;
+        margin: 40px 0;
+        border-radius: 25px;
+        width: 90%;
     }
 
     .card {
