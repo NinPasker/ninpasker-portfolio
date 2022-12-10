@@ -1,5 +1,5 @@
 .waveContainer {
-    background-color: $backgroundColor;
+    background-color: $waveColor;
     position: relative;
     padding-bottom: 100px;
 
@@ -12,6 +12,6 @@
         height: 150px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
-        display: inline-block;      
+        display: inline-block;
     }
 }
