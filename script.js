@@ -12,21 +12,21 @@ document.querySelectorAll('.controls li').forEach(function(indicator, ind) {
         sectionIndex = ind;
         document.querySelector('.controls .selected').classList.remove('selected');
         indicator.classList.add('selected');
-        slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
+        slider.style.transform = 'translate(' + (sectionIndex) * -20 + '%)';
     });
 });
 
 
 rightArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex < 3) ? sectionIndex + 1 : 3;
+    sectionIndex = (sectionIndex < 4) ? sectionIndex + 1 : 4;
     document.querySelector('.controls .selected').classList.remove('selected');
     indicatorParent.children[sectionIndex].classList.add('selected');
-    slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
+    slider.style.transform = 'translate(' + (sectionIndex) * -20 + '%)';
 })
 
 leftArrow.addEventListener('click', function () {
     sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
     document.querySelector('.controls .selected').classList.remove('selected');
     indicatorParent.children[sectionIndex].classList.add('selected');
-    slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
+    slider.style.transform = 'translate(' + (sectionIndex) * -20 + '%)';
 })

@@ -11,7 +11,7 @@
 .slider {
     height: 100%;
     display: flex;
-    width: 400%;
+    width: 500%;
     transition: all 0.3s;
 }
 
@@ -20,6 +20,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 90px 100px 60px 100px;
+    color: $logoColor;
+
+    img {
+        border-radius: 25px;
+        height: 50%;
+        width: 75%;
+        box-shadow: 10px 10px 5px 5px $waveColor;
+    }
+
+    h3 {
+        @include fontSize(30);
+        padding-top: 20px;
+    }
+
+    p {
+        @include fontSize(25);
+        text-align: left;
+        letter-spacing: .2rem;
+    }
+
+    .repo,
+    .live-site {
+        text-decoration: none;
+        padding: 10px 50px;
+        color: #2E2E2E;
+        @include fontSize(25);
+        transition: .3s;
+
+        &:hover,
+        &:focus {
+            color: $logoColor;
+            letter-spacing: .3rem;
+        }
+    }
+
+    .juno {
+        padding: 0;
+        text-transform: none;
+        text-decoration: none;
+        color: #2E2E2E;
+        transition: .3s;
+
+        &:hover,
+        &:focus {
+            color: $logoColor;
+        }
+    }
+
 }
 
 .project-cards {

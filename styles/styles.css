@@ -280,7 +280,7 @@ h2 {
 h2 {
   text-transform: uppercase;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   font-size: 60px;
   font-size: 3rem;
 }
@@ -624,6 +624,9 @@ li {
     background-position: 51% 0%;
   }
 }
+.skills {
+  padding-bottom: 100px;
+}
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,10 +642,11 @@ li {
   text-align: center;
   width: 25%;
   cursor: url(../assets/spaceman-cursor.png), pointer;
+  padding-top: 50px;
 }
 .skills ul li:hover i,
 .skills ul li:hover p {
-  color: #8DC9C9;
+  color: #0B2B6B;
 }
 .skills ul li:hover i {
   -webkit-transform: scale(1.5);
@@ -662,7 +666,7 @@ li {
 }
 .skills i,
 .skills p {
-  color: #0B2B6B;
+  color: #2E2E2E;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -699,7 +703,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400%;
+  width: 500%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -716,6 +720,53 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 90px 100px 60px 100px;
+  color: #0B2B6B;
+}
+.slider section img {
+  border-radius: 25px;
+  height: 50%;
+  width: 75%;
+  -webkit-box-shadow: 10px 10px 5px 5px #8DC9C9;
+          box-shadow: 10px 10px 5px 5px #8DC9C9;
+}
+.slider section h3 {
+  font-size: 30px;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.slider section p {
+  font-size: 25px;
+  font-size: 1.25rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+}
+.slider section .repo,
+.slider section .live-site {
+  text-decoration: none;
+  padding: 10px 50px;
+  color: #2E2E2E;
+  font-size: 25px;
+  font-size: 1.25rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider section .repo:hover, .slider section .repo:focus,
+.slider section .live-site:hover,
+.slider section .live-site:focus {
+  color: #0B2B6B;
+  letter-spacing: 0.3rem;
+}
+.slider section .juno {
+  padding: 0;
+  text-transform: none;
+  text-decoration: none;
+  color: #2E2E2E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider section .juno:hover, .slider section .juno:focus {
+  color: #0B2B6B;
 }
 
 .project-cards {
