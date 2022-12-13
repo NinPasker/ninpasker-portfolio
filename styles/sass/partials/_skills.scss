@@ -16,7 +16,7 @@
             &:hover {
                 i,
                 p {
-                    color: $logoColor;
+                    color: $menuNavColor;
                 }
 
                 i {
@@ -41,7 +41,7 @@
 
     i,
     p {
-        color: #2E2E2E;
-        transition: .5s;
+        color: $waveColor;
+        transition: .3s;
     }
 }

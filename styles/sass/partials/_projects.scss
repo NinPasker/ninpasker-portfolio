@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .carousel {
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     margin: 90px 100px 60px 100px;
-    color: $logoColor;
+    color: $waveColor;
 
     img {
         border-radius: 25px;
@@ -33,6 +34,8 @@
     h3 {
         @include fontSize(30);
         padding-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     p {
@@ -45,13 +48,13 @@
     .live-site {
         text-decoration: none;
         padding: 10px 50px;
-        color: #2E2E2E;
+        color: $menuNavColor;
         @include fontSize(25);
         transition: .3s;
 
         &:hover,
         &:focus {
-            color: $logoColor;
+            color: $waveColor;
             letter-spacing: .3rem;
         }
     }
@@ -65,7 +68,7 @@
 
         &:hover,
         &:focus {
-            color: $logoColor;
+            color: $waveColor;
         }
     }
 
@@ -90,7 +93,7 @@
 
     i {
         @include fontSize(60);
-        color: $logoColor;
+        color: $waveColor;
     }
 
     &.left {
@@ -112,10 +115,10 @@
     li {
         width: 14px;
         height: 14px;
-        border: 2px solid $logoColor;
+        border: 2px solid $waveColor;
         border-radius: 50px;
         margin: 10px;
-        background-color: $logoColor;
+        background-color: $waveColor;
         cursor: pointer;
 
         &.selected {

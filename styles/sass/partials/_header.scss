@@ -3,9 +3,9 @@
 .name-holder {
     position: relative;
     height: 100vh;
-    background: linear-gradient(360deg, #d8f0fa, #f6ffc8, #1385b3);
+    background: linear-gradient(-90deg, #354f52, #52796f, #84a98c);
     background-size: 400% 400%;
-    animation: move 10s ease-in-out infinite 3s;
+    animation: move 14s ease infinite 4s;
 
     svg {
         width: 500px;
@@ -98,21 +98,21 @@
     }
 
     100% {
-        fill: #0b2b6b;
+        fill: #cad2c5;
     }
 }
 
 @keyframes move {
 
     0% {
-        background-position: 51% 0%
+        background-position: 0% 50%
     }
 
     50% {
-        background-position: 50% 100%
+        background-position: 100% 50%
     }
 
     100% {
-        background-position: 51% 0%
+        background-position: 0% 50%
     }
 }
