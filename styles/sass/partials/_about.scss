@@ -1,0 +1,46 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &:hover {
+        img {
+            opacity: 1;
+            animation: slideIn 1s;
+        }
+    }
+
+    p {
+        letter-spacing: .3rem;
+        line-height: 2rem;
+
+        &:first-child {
+            padding-top: 100px;
+        }
+
+        &:last-child {
+            padding-bottom: 50px;
+        }
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+        position: absolute;
+        top: -40px;
+        right: 0;
+        opacity: 0;
+        transition: 3s;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        right: -1000px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}

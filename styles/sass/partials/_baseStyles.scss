@@ -11,7 +11,7 @@ h1,
 h2 {
     margin: 0;
     font-family: $headingFont;
-    color: $logoColor;
+    color: $backgroundColor;
 }
 
 h2 {
@@ -39,5 +39,13 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic;
 }
 

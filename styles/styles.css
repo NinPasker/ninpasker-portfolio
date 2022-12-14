@@ -279,7 +279,7 @@ h1,
 h2 {
   margin: 0;
   font-family: "Adventuro";
-  color: #cad2c5;
+  color: #f6ffc8;
 }
 
 h2 {
@@ -308,6 +308,14 @@ li {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .menu-wrap {
@@ -350,7 +358,7 @@ li {
   position: relative;
   width: 100%;
   height: 2.2px;
-  background-color: #84a98c;
+  background-color: #2f3e46;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +606,7 @@ li {
     fill: transparent;
   }
   100% {
-    fill: #cad2c5;
+    fill: #f6ffc8;
   }
 }
 @keyframes fill {
@@ -606,7 +614,7 @@ li {
     fill: transparent;
   }
   100% {
-    fill: #cad2c5;
+    fill: #f6ffc8;
   }
 }
 @-webkit-keyframes move {
@@ -744,7 +752,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   margin: 90px 100px 60px 100px;
-  color: #84a98c;
+  color: #2f3e46;
 }
 .slider section img {
   border-radius: 25px;
@@ -770,7 +778,7 @@ li {
 .slider section .live-site {
   text-decoration: none;
   padding: 10px 50px;
-  color: #2f3e46;
+  color: #84a98c;
   font-size: 25px;
   font-size: 1.25rem;
   -webkit-transition: 0.3s;
@@ -779,7 +787,7 @@ li {
 .slider section .repo:hover, .slider section .repo:focus,
 .slider section .live-site:hover,
 .slider section .live-site:focus {
-  color: #84a98c;
+  color: #2f3e46;
   letter-spacing: 0.3rem;
 }
 .slider section .juno {
@@ -853,4 +861,61 @@ li {
 }
 .controls ul li.selected {
   background: transparent;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.aboutContainer:hover img {
+  opacity: 1;
+  -webkit-animation: slideIn 1s;
+          animation: slideIn 1s;
+}
+.aboutContainer p {
+  letter-spacing: 0.3rem;
+  line-height: 2rem;
+}
+.aboutContainer p:first-child {
+  padding-top: 100px;
+}
+.aboutContainer p:last-child {
+  padding-bottom: 50px;
+}
+.aboutContainer img {
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
 }
