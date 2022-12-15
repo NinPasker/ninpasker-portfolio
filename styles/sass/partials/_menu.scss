@@ -128,6 +128,10 @@
                     @include fontSize(50);
                     padding: 1rem;
 
+                    @include breakpoint(large) {
+                        @include fontSize(30);
+                    }
+
                     & > a {
                         color: inherit;
                         text-decoration: none;

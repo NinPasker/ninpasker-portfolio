@@ -60,6 +60,14 @@
             font-weight: normal;
         }
     }
+
+    .contact {
+        fieldset {
+        input[type=checkbox] {
+                scale: 1;
+            }
+        }
+    }
 }
 
 // 570px media queries
