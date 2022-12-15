@@ -1,34 +1,30 @@
-.aboutContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-
+.about {
     &:hover {
         img {
             opacity: 1;
             animation: slideIn 1s;
         }
     }
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 100px 0;
 
     p {
         letter-spacing: .3rem;
         line-height: 2rem;
-
-        &:first-child {
-            padding-top: 100px;
-        }
-
-        &:last-child {
-            padding-bottom: 50px;
-        }
+        font-weight: bold;
     }
 
     img {
         height: 30%;
         width: 30%;
         position: absolute;
-        top: -40px;
+        top: -120px;
         right: 0;
         opacity: 0;
         transition: 3s;

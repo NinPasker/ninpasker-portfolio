@@ -1,3 +1,18 @@
+// Javascript for menu functionality is below
+
+const menu = document.querySelectorAll('.mobile-menu');
+
+const checkbox = document.getElementById('toggle');
+
+// close mobile menu when link is clicked
+menu.forEach(e => {
+    e.addEventListener('click', function () {
+        checkbox.checked = false;
+    })
+})
+
+// Javascript for Slider functionality is below
+
 const slider = document.querySelector('.slider');
 
 const leftArrow = document.querySelector('.left');

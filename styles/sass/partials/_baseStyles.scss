@@ -45,7 +45,17 @@ li {
     text-decoration: line-through;
 }
 
-.italic {
+.italic,
+.highlight {
     font-style: italic;
+}
+
+.highlight {
+    color: $menuNavColor;
+    border-bottom: 2px solid $menuNavColor;
+}
+
+.emoji {
+    @include fontSize(30);
 }
 

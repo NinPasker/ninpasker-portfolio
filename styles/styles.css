@@ -251,6 +251,10 @@ html {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Revonza";
   src: url(../fonts/revonza-regular.ttf);
@@ -314,8 +318,19 @@ li {
   text-decoration: line-through;
 }
 
-.italic {
+.italic,
+.highlight {
   font-style: italic;
+}
+
+.highlight {
+  color: #2f3e46;
+  border-bottom: 2px solid #2f3e46;
+}
+
+.emoji {
+  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 .menu-wrap {
@@ -863,6 +878,12 @@ li {
   background: transparent;
 }
 
+.about:hover img {
+  opacity: 1;
+  -webkit-animation: slideIn 1s;
+          animation: slideIn 1s;
+}
+
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,27 +896,18 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-.aboutContainer:hover img {
-  opacity: 1;
-  -webkit-animation: slideIn 1s;
-          animation: slideIn 1s;
+  padding: 100px 0;
 }
 .aboutContainer p {
   letter-spacing: 0.3rem;
   line-height: 2rem;
-}
-.aboutContainer p:first-child {
-  padding-top: 100px;
-}
-.aboutContainer p:last-child {
-  padding-bottom: 50px;
+  font-weight: bold;
 }
 .aboutContainer img {
   height: 30%;
   width: 30%;
   position: absolute;
-  top: -40px;
+  top: -120px;
   right: 0;
   opacity: 0;
   -webkit-transition: 3s;
