@@ -685,7 +685,7 @@ footer p {
 }
 .skills ul li:hover i,
 .skills ul li:hover p {
-  color: #2f3e46;
+  color: #84a98c;
 }
 .skills ul li:hover i {
   -webkit-transform: scale(1.5);
@@ -705,7 +705,7 @@ footer p {
 }
 .skills i,
 .skills p {
-  color: #84a98c;
+  color: #2f3e46;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -726,7 +726,7 @@ footer p {
   bottom: 0;
   background-image: url(../assets/wave.svg);
   height: 150px;
-  width: 200%;
+  width: 300%;
   background-size: 100% 150px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -747,24 +747,24 @@ footer p {
 }
 @-webkit-keyframes wave {
   0% {
-    width: 100%;
-  }
-  50% {
     width: 200%;
   }
+  50% {
+    width: 300%;
+  }
   100% {
-    width: 100%;
+    width: 200%;
   }
 }
 @keyframes wave {
   0% {
-    width: 100%;
-  }
-  50% {
     width: 200%;
   }
+  50% {
+    width: 300%;
+  }
   100% {
-    width: 100%;
+    width: 200%;
   }
 }
 .projects {
@@ -938,6 +938,8 @@ footer p {
   letter-spacing: 0.3rem;
   line-height: 2rem;
   font-weight: bold;
+  font-size: 25px;
+  font-size: 1.25rem;
 }
 .aboutContainer .imgContainer {
   display: -webkit-box;
@@ -1050,28 +1052,28 @@ footer p {
 .contact textarea {
   resize: none;
 }
-.contact input::-webkit-input-placeholder {
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
   font-family: "Comfortaa";
   color: #f6ffc8;
   opacity: 1;
 }
-.contact input::-moz-placeholder {
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
   font-family: "Comfortaa";
   color: #f6ffc8;
   opacity: 1;
 }
-.contact input:-ms-input-placeholder {
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
   font-family: "Comfortaa";
   color: #f6ffc8;
   opacity: 1;
 }
-.contact input::-ms-input-placeholder {
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
   font-family: "Comfortaa";
   color: #f6ffc8;
   opacity: 1;
 }
 .contact input::placeholder,
-.contact textarea {
+.contact textarea::placeholder {
   font-family: "Comfortaa";
   color: #f6ffc8;
   opacity: 1;
@@ -1141,7 +1143,7 @@ footer a:hover, footer a:focus {
 
 .termsContainer {
   position: relative;
-  height: 100vh;
+  height: auto;
   background: -webkit-gradient(linear, right top, left top, from(#354f52), color-stop(#52796f), to(#84a98c));
   background: linear-gradient(-90deg, #354f52, #52796f, #84a98c);
   background-size: 400% 400%;
@@ -1186,4 +1188,95 @@ footer a:hover, footer a:focus {
 .termsContainer a:hover, .termsContainer a:focus {
   color: #f6ffc8;
   letter-spacing: 0.2rem;
+}
+
+@media (max-width: 1080px) {
+  .name-holder svg {
+    width: 300px;
+    height: 300px;
+  }
+  .name-holder h1 {
+    font-size: 25px;
+    font-size: 1.25rem;
+    padding-top: 100px;
+  }
+  h2 {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+  .skills ul li {
+    width: 33.3333333333%;
+  }
+  .skills i {
+    font-size: 50px;
+    font-size: 2.5rem;
+  }
+  .skills p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .slider section img {
+    height: 75%;
+    width: 50%;
+  }
+  .slider section h3 {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .slider section p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .slider section .repo,
+.slider section .live-site {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .aboutContainer p {
+    font-size: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+@media (max-width: 570px) {
+  .skills ul li {
+    width: 50%;
+  }
+  .slider section {
+    margin: 90px 50px 60px 50px;
+  }
+  .slider section img {
+    height: 75%;
+    width: 100%;
+  }
+  .slider section h3 {
+    text-align: center;
+  }
+  .slider section .repo,
+.slider section .live-site {
+    font-size: 16px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .controls .arrow i {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+  .aboutContainer p {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 450px) {
+  .skills p {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
+  .slider section p {
+    text-align: center;
+  }
+  footer p {
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
 }

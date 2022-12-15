@@ -62,7 +62,7 @@
     }
 
     input::placeholder,
-    textarea {
+    textarea::placeholder {
         font-family: $bodyFont;
         color: $backgroundColor;
         opacity: 1;

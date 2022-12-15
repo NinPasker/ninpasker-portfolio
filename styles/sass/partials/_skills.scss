@@ -16,7 +16,7 @@
             &:hover {
                 i,
                 p {
-                    color: $menuNavColor;
+                    color: $waveColor;
                 }
 
                 i {
@@ -41,7 +41,7 @@
 
     i,
     p {
-        color: $waveColor;
+        color: $menuNavColor;
         transition: .3s;
     }
 }
