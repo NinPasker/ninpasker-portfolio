@@ -333,6 +333,15 @@ li {
   font-size: 1.5rem;
 }
 
+footer {
+  text-align: center;
+  background-color: #f6ffc8;
+  padding: 10px 20px;
+}
+footer p {
+  margin: 0;
+}
+
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -709,17 +718,20 @@ li {
   position: relative;
   padding-bottom: 100px;
   background-size: 400% 400%;
+  overflow: hidden;
 }
 .waveContainer::after {
   content: "";
   position: absolute;
   bottom: 0;
   background-image: url(../assets/wave.svg);
-  width: 100%;
   height: 150px;
+  width: 200%;
   background-size: 100% 150px;
   background-repeat: no-repeat;
   display: inline-block;
+  -webkit-animation: wave 10s ease-in-out infinite;
+          animation: wave 10s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -731,6 +743,28 @@ li {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes wave {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 200%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes wave {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 200%;
+  }
+  100% {
+    width: 100%;
   }
 }
 .container {
@@ -878,12 +912,6 @@ li {
   background: transparent;
 }
 
-.about:hover img {
-  opacity: 1;
-  -webkit-animation: slideIn 1s;
-          animation: slideIn 1s;
-}
-
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,31 +931,198 @@ li {
   line-height: 2rem;
   font-weight: bold;
 }
-.aboutContainer img {
-  height: 30%;
-  width: 30%;
-  position: absolute;
-  top: -120px;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: 3s;
-  transition: 3s;
+.aboutContainer .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutContainer .imgContainer .outerCircle {
+  height: 42vh;
+  width: 42vh;
+  background-color: #2f3e46;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.aboutContainer .imgContainer .circle {
+  height: 40vh;
+  width: 40vh;
+  background: -webkit-gradient(linear, right top, left top, from(#354f52), color-stop(#52796f), to(#84a98c));
+  background: linear-gradient(-90deg, #354f52, #52796f, #84a98c);
+  z-index: 4;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid #f6ffc8;
+}
+.aboutContainer .imgContainer img {
+  height: 30vh;
+  width: 30vh;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  z-index: 5;
 }
 
-@-webkit-keyframes slideIn {
-  0% {
-    right: -1000px;
-  }
-  100% {
-    right: 0px;
-  }
+.contact h3 {
+  padding-top: 50px;
+  font-family: "Adventuro";
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+}
+.contact input,
+.contact textarea,
+.contact fieldset,
+.contact button {
+  border: none;
+  padding: 20px 20px;
+  margin: 20px 0;
+  border-radius: 25px;
+}
+.contact button {
+  cursor: not-allowed;
+  background-color: #84a98c;
+  color: #f6ffc8;
+  font-family: "Comfortaa";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact button:disabled:hover, .contact button:disabled:focus {
+  opacity: 0.5;
+}
+.contact button:enabled:hover, .contact button:enabled:focus {
+  background-color: #2f3e46;
+  cursor: url(../assets/party-cursor.png), pointer;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid #2f3e46;
+  outline: none;
+  background: #84a98c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f6ffc8;
+}
+.contact input:focus, .contact input:focus,
+.contact textarea:focus,
+.contact textarea:focus {
+  border-color: #84a98c;
+  -webkit-box-shadow: 0 0 5px #84a98c;
+          box-shadow: 0 0 5px #84a98c;
+  background-color: #2f3e46;
+}
+.contact textarea {
+  resize: none;
+}
+.contact input::-webkit-input-placeholder {
+  font-family: "Comfortaa";
+  color: #f6ffc8;
+  opacity: 1;
+}
+.contact input::-moz-placeholder {
+  font-family: "Comfortaa";
+  color: #f6ffc8;
+  opacity: 1;
+}
+.contact input:-ms-input-placeholder {
+  font-family: "Comfortaa";
+  color: #f6ffc8;
+  opacity: 1;
+}
+.contact input::-ms-input-placeholder {
+  font-family: "Comfortaa";
+  color: #f6ffc8;
+  opacity: 1;
+}
+.contact input::placeholder,
+.contact textarea {
+  font-family: "Comfortaa";
+  color: #f6ffc8;
+  opacity: 1;
+}
+.contact fieldset {
+  text-align: center;
+  color: #2f3e46;
+}
+.contact fieldset label a {
+  text-decoration: none;
+  color: #2f3e46;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 0.1rem;
+}
+.contact fieldset label a:hover, .contact fieldset label a:focus {
+  letter-spacing: 0.2rem;
+  color: #84a98c;
+}
+.contact fieldset input[type=checkbox] {
+  scale: 1.5;
+  margin-right: 20px;
+}
+.contact fieldset input[type=checkbox]:checked {
+  accent-color: #84a98c;
+}
+.contact .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px;
+}
+.contact .social-icons a {
+  font-size: 50px;
+  font-size: 2.5rem;
+  padding: 40px 40px;
+}
+.contact .social-icons a:hover i, .contact .social-icons a:focus i {
+  color: #2f3e46;
+  scale: 1.5;
+}
+.contact .social-icons i {
+  color: #84a98c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@keyframes slideIn {
-  0% {
-    right: -1000px;
-  }
-  100% {
-    right: 0px;
-  }
+footer p {
+  letter-spacing: 0.1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #2f3e46;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px 5px 0 5px;
+  text-transform: capitalize;
+}
+footer a:hover, footer a:focus {
+  color: #84a98c;
+  letter-spacing: 0.2rem;
 }

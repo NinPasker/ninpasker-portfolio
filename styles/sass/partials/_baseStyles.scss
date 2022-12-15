@@ -59,3 +59,12 @@ li {
     @include fontSize(30);
 }
 
+footer {
+    text-align: center;
+    background-color: $backgroundColor;
+    padding: 10px 20px;
+
+    p {
+        margin: 0;
+    }
+}

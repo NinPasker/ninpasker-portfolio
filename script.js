@@ -45,3 +45,17 @@ leftArrow.addEventListener('click', function () {
     indicatorParent.children[sectionIndex].classList.add('selected');
     slider.style.transform = 'translate(' + (sectionIndex) * -20 + '%)';
 })
+
+// js for contact func is below
+
+const termsCheckbox = document.getElementById('terms');
+
+const button = document.querySelector('.button');
+
+termsCheckbox.addEventListener('input', (event) => {
+    if (event.target.checked === true) {
+        button.disabled = false;
+    } else {
+        button.disabled = true;
+    }
+})

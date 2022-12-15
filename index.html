@@ -62,7 +62,7 @@
         </section>
     </header>
 
-    <main>
+    <main id="mainContent">
         <section class="skills">
             <div class="waveContainer">
                 <div class="wrapper">
@@ -202,18 +202,24 @@
             </div>
             <div class="wrapper">
                 <div class="aboutContainer">
+                    <div class="imgContainer">
+                        <div class="outerCircle">
+                            <div class="circle">
+                                <img src="./assets/about-me.png" alt="picture of nin">
+                            </div>
+                        </div>
+                    </div>
                     <p>Hi there! Thanks for surfing through <span class="emoji">🏄🏽</span>.</p>
 
-                    <p>I'm a Toronto based Front-End Web Developer, who enjoys tackling problems in a <span class="highlight">creative</span>, <span class="highlight">resilient</span>, and <span class="strike-through">caffeinated</span> <span class="italic">(I've converted to green tea)</span> manner. Whilst enjoying these problems I harness the powers of my OCD to produce <span class="highlight">clean and readable code</span> which allows teammates and myself to be able to debug <span class="strike-through">in peace</span> with less stress.</p>
+                    <p>I'm a Toronto based Front-End Web Developer, who enjoys tackling problems in a <span class="highlight">creative</span>, <span class="highlight">resilient</span>, and <span class="strike-through">coffee sipping</span> <span class="italic">tea sipping</span> manner. Whilst enjoying these problems I harness the powers of my OCD to produce <span class="highlight">clean and readable code</span> which allows teammates and myself to be able to debug <span class="strike-through">in peace</span> with less stress.</p>
 
-                    <p>Coming from an extensive sales background I possess strong <span class="highlight">communication</span>, <span class="highlight">teamwork</span>, and <span class="highlight">leadership</span> skills which translates into my development process by being able to explain why and how certain tools are being used to achieve a desired result. I made the tranistion from sales to development since I'm able to flex the creative side of my brain which I find absolutely joyful <span class="emoji">💖</span>.</p> 
+                    <p>Coming from an extensive sales background I possess strong <span class="highlight">communication</span>, <span class="highlight">teamwork</span>, and <span class="highlight">leadership</span> skills which translates into my development process by being able to explain why and how certain tools are being used to achieve a desired result. I made the tranistion from sales to development since I'm able to flex<span class="italic">(box)</span> the creative side of my brain which I find absolutely joyful <span class="emoji">💖</span>.</p> 
 
-                    <p>In my free time I like to indulge in finance and self-help books. Naturally being a curious person I enjoy to learn various skills and crafts. In the process of exploring new skills and crafts I've picked up cooking, working-out, journaling, and in the process of starting an online business. I also play video games whenever I'm not occupied by a book or by my curious nature <span class="emoji">🤫</span>.</p>
+                    <p>In my free time I like to indulge in finance and self-help books. Naturally being a curious person I love to learn various skills and crafts. With the everlasting desire to learn I've picked up cooking <span class="italic">(took a course at George Brown)</span>, working-out, journaling, and in the process of starting an online business. I also play video games whenever I'm not occupied by a book or by my curious nature <span class="emoji">🎮🤫</span>.</p>
 
-                    <p>I'm always open to <span class="emoji">✨</span>collaboration<span class="emoji">✨</span> and currently open to work. Feel free to reach out to me via the contact methods below.</p>
+                    <p>I'm always open to <span class="emoji">✨</span>collaboration<span class="emoji">✨</span> and currently open to work. Feel free to reach out to me via the contact form below or following the links to my social accounts.</p>
 
                     <p>Thanks for reading, and looking forward to connecting with you!</p>
-                    <img src="./assets/about-me.png" alt="picture of nin">
                 </div>
             </div>
         </section>
@@ -224,8 +230,41 @@
                     <h2>Contact</h2>
                 </div>
             </div>
+            <div class="wrapper">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <form action="https://formspree.io/f/meqwjjkp" method="POST" class="contactForm" name="contactForm">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input type="text" id="name" placeholder="Name" class="inputCheck" required> <!-- END Name input -->
+                
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input type="email" id="email" placeholder="Email" class="inputCheck" required>
+                    <!-- END Email input -->
+                
+                    <label for="message" class="sr-only">Message for Me</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Feel free to leave an inquiry 💫" class="inputCheck" required></textarea>
+                    <!-- END message input -->
+                
+                    <fieldset>
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="./pages/terms.html" target="_blank" class="terms">Terms & Conditions</a>.</label>
+                    </fieldset>
+                    <!-- END terms and conditions input -->
+                
+                    <button class="button" disabled>Send Message</button>
+                </form> <!-- END .contactForm -->
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>Designed & Developed by <a href="#">Nin Pasker</a></p>
+    </footer>
 
     <script src="./script.js"></script>
 </body>

@@ -1,0 +1,19 @@
+footer {
+    p {
+        letter-spacing: .1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $menuNavColor;
+        transition: .3s;
+        padding: 15px 5px 0 5px;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            color: $waveColor;
+            letter-spacing: .2rem;
+        }
+    }
+}

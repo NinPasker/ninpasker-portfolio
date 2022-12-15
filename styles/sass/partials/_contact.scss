@@ -1,0 +1,124 @@
+.contact {
+    h3 {
+        padding-top: 50px;
+        font-family: $headingFont;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    input,
+    textarea,
+    fieldset,
+    button {
+        border: none;
+        padding: 20px 20px;
+        margin: 20px 0;
+        border-radius: 25px;
+    }
+
+    button {
+        cursor: not-allowed;
+        background-color: $waveColor;
+        color: $backgroundColor;
+        font-family: $bodyFont;
+        transition: .3s;
+
+        &:disabled:hover,
+        &:disabled:focus {
+            opacity: .5;
+        }
+
+        &:enabled:hover,
+        &:enabled:focus {
+            background-color: $menuNavColor;
+            cursor: url(../assets/party-cursor.png), pointer;
+        }
+    }
+
+    input,
+    textarea {
+        border: 1px solid $menuNavColor;
+        outline: none;
+        background: $waveColor;
+        transition: .3s;
+        color: $backgroundColor;
+
+        &:focus,
+        &:focus {
+            border-color: $waveColor;
+            box-shadow: 0 0 5px $waveColor;
+            background-color: $menuNavColor;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input::placeholder,
+    textarea {
+        font-family: $bodyFont;
+        color: $backgroundColor;
+        opacity: 1;
+    }
+
+    fieldset {
+        text-align: center;
+        color: $menuNavColor;
+
+        label a {
+            text-decoration: none;
+            color: $menuNavColor;
+            text-transform: capitalize;
+            transition: .3s;
+            letter-spacing: .1rem;
+
+            &:hover,
+            &:focus {
+                letter-spacing: .2rem;
+                color: $waveColor;
+            }
+        }
+
+        input[type=checkbox] {
+            scale: 1.5;
+            margin-right: 20px;
+        }
+
+        input[type=checkbox]:checked {
+            accent-color: $waveColor;
+        }
+    }
+
+    .social-icons {
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        
+        a {
+            @include fontSize(50);
+            padding: 40px 40px;
+
+            &:hover,
+            &:focus {
+                i {
+                    color: $menuNavColor;
+                    scale: 1.5;
+                }
+            }
+        }
+
+        i {
+            color: $waveColor;
+            transition: .3s;
+        }
+    }
+
+}
