@@ -1,0 +1,42 @@
+.termsContainer {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(-90deg, #354f52, #52796f, #84a98c);
+    background-size: 400% 400%;
+    animation: move 14s ease infinite 4s;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    h1 {
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        background-color: rgba(63, 63, 63, 0.3);
+        padding: 40px 20px;
+        color: $backgroundColor;
+        letter-spacing: .3rem;
+        line-height: 3rem;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: $waveColor;
+        transition: .3s;
+        padding: 15px 5px 0 5px;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            color: $backgroundColor;
+            letter-spacing: .2rem;
+        }
+    }
+}

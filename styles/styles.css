@@ -767,6 +767,10 @@ footer p {
     width: 100%;
   }
 }
+.projects {
+  cursor: url(../assets/sparkle-cursor.png), pointer;
+}
+
 .container {
   width: 100%;
   padding-bottom: 50px;
@@ -912,6 +916,10 @@ footer p {
   background: transparent;
 }
 
+.about {
+  cursor: url(../assets/person-cursor.png), pointer;
+}
+
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,6 +989,9 @@ footer p {
   z-index: 5;
 }
 
+.contact {
+  cursor: url(../assets/phone-cursor.png), pointer;
+}
 .contact h3 {
   padding-top: 50px;
   font-family: "Adventuro";
@@ -1084,6 +1095,7 @@ footer p {
 .contact fieldset input[type=checkbox] {
   scale: 1.5;
   margin-right: 20px;
+  cursor: pointer;
 }
 .contact fieldset input[type=checkbox]:checked {
   accent-color: #84a98c;
@@ -1124,5 +1136,54 @@ footer a {
 }
 footer a:hover, footer a:focus {
   color: #84a98c;
+  letter-spacing: 0.2rem;
+}
+
+.termsContainer {
+  position: relative;
+  height: 100vh;
+  background: -webkit-gradient(linear, right top, left top, from(#354f52), color-stop(#52796f), to(#84a98c));
+  background: linear-gradient(-90deg, #354f52, #52796f, #84a98c);
+  background-size: 400% 400%;
+  -webkit-animation: move 14s ease infinite 4s;
+          animation: move 14s ease infinite 4s;
+}
+.termsContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.termsContainer h1 {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.termsContainer p {
+  background-color: rgba(63, 63, 63, 0.3);
+  padding: 40px 20px;
+  color: #f6ffc8;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+.termsContainer a {
+  text-decoration: none;
+  color: #84a98c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px 5px 0 5px;
+  text-transform: capitalize;
+}
+.termsContainer a:hover, .termsContainer a:focus {
+  color: #f6ffc8;
   letter-spacing: 0.2rem;
 }
